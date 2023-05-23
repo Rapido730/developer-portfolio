@@ -51,11 +51,11 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
         }
       >
         <h1>
-          I have experience in developing web applications from the ground up,
-          handling all the aspects till deployment. My major work is in MERN
-          Stack. I'm Skilled in Problem Solving, Data structure & Algorithms.
-          Actively participate in coding contests like Google Kickstart(achieved
-          5041 rank in Kick start(round E), and LeetCode Weekly(rating 1750+).
+          {("I have experience in developing web applications from the ground up, ")+
+          ("handling all the aspects till deployment. My major work is in MERN ")+
+          ("Stack. I'm Skilled in Problem Solving, Data structure & Algorithms. ")+
+          ("Actively participate in coding contests like Google Kickstart (achieved ")+
+          ("5041 rank in Kick start(round E), and LeetCode Weekly(rating 1750+).")}
         </h1>
       </div>
       <div className="flex mx-auto py-12 space-x-12">
