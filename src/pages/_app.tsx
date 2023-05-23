@@ -1,6 +1,14 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { ThemeContext, ThemeContextType } from "@/context/app_state";
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  const [Theme, SetTheme] = useState<string>("light");
+
+  return (
+    <ThemeContext.Provider value={{ Theme, SetTheme }}>
+      <Component {...pageProps} />{" "}
+    </ThemeContext.Provider>
+  );
 }
