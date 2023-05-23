@@ -30,32 +30,35 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
   const { Theme, SetTheme } = useContext(ThemeContext);
 
   return (
-    <div className={"mt-24 flex flex-col"}>
+    <div className={"mt-24 flex flex-col "}>
       <div className="mx-auto ">
         <Image className="rounded-full" src={dp} alt="profile" width={200} />
       </div>
       <div className="mx-auto pt-8">
-        <h1 className="text-4xl font-bold flex space-x-2">
-          <span className={"" + (Theme === "light" ? " " : " text-white")}>
+        <div className="text-4xl font-bold flex space-x-2 flex max-sm:flex-col">
+          <h1
+            className={" mx-auto " + (Theme === "light" ? " " : " text-white ")}
+          >
             {" "}
             {"Hi, I'm  "}{" "}
-          </span>
-          <span className="text-blue-500">
+          </h1>
+          <h1 className="text-blue-500 flex">
             <Typing_Animation />
-          </span>
-        </h1>
+          </h1>
+        </div>
       </div>
       <div
         className={
-          "mx-auto px-96 py-2" + (Theme === "light" ? " " : " text-white")
+          "mx-auto max-sm:w-96 sm:px-96 py-2" +
+          (Theme === "light" ? " " : " text-white")
         }
       >
         <h1>
-          {("I have experience in developing web applications from the ground up, ")+
-          ("handling all the aspects till deployment. My major work is in MERN ")+
-          ("Stack. I'm Skilled in Problem Solving, Data structure & Algorithms. ")+
-          ("Actively participate in coding contests like Google Kickstart (achieved ")+
-          ("5041 rank in Kick start(round E), and LeetCode Weekly(rating 1750+).")}
+          {"I have experience in developing web applications from the ground up, " +
+            "handling all the aspects till deployment. My major work is in MERN " +
+            "Stack. I'm Skilled in Problem Solving, Data structure & Algorithms. " +
+            "Actively participate in coding contests like Google Kickstart (achieved " +
+            "5041 rank in Kick start(round E), and LeetCode Weekly(rating 1750+)."}
         </h1>
       </div>
       <div className="flex mx-auto py-12 space-x-12">
@@ -100,7 +103,7 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
           </div>
         </Link>
       </div>
-      <div className="">
+      <div className="max-sm:px-4 ">
         <div className="flex flex-col gap-8">
           <h1
             className={
@@ -110,8 +113,12 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
           >
             Experience
           </h1>
-          <div className="flex mx-auto p-4 mb-2 w-6/12 rounded-lg bg-gray-100 space-x-4">
-            <Image src={W3dev_Logo} className="h-12 w-12" alt="W3Dev" />
+          <div className="flex max-sm:flex-col mx-auto p-4 mb-2 sm:w-6/12  rounded-lg bg-gray-100 space-x-4">
+            <Image
+              src={W3dev_Logo}
+              className="h-12 w-12 max-sm:mx-auto "
+              alt="W3Dev"
+            />
             <div>
               <h1 className="text-2xl mb-2 font-bold">
                 {"Full Stack Developer Intern (Jan - Apr 2023)"}
@@ -178,8 +185,7 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
               <Image src={Location_Icon} className="h-8 w-8 " alt="location" />
               <h1
                 className={
-                  "font-bold " +
-                  (Theme === "light" ? " " : " text-white")
+                  "font-bold " + (Theme === "light" ? " " : " text-white")
                 }
               >
                 {"Kurnool, Andhra Pradesh, India"}

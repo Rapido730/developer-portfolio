@@ -8,7 +8,6 @@ import { useRef } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/app_state";
 
-
 const poppins = Poppins({
   subsets: ["latin"],
   style: ["normal"],
@@ -16,7 +15,6 @@ const poppins = Poppins({
 });
 
 export default function Home() {
-
   const { Theme, SetTheme } = useContext(ThemeContext);
   const Work_Ref = useRef();
   const Contact_Ref = useRef();
@@ -24,7 +22,7 @@ export default function Home() {
   return (
     <div
       className={
-        "p-4 " +
+        "flex flex-col max-sm:overflow-auto" +
         (Theme === "light"
           ? ""
           : " bg-gradient-to-tl from-gray-800 via-slate-600 to-slate-800 ") +

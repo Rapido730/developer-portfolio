@@ -21,7 +21,7 @@ const Header = ({ Work_Ref, Contact_Ref }: props) => {
   };
 
   return (
-    <div className={"flex justify-between border-b-2" + (Theme==="light"?" ":" text-white")}>
+    <div className={"flex justify-between border-b-2 p-2" + (Theme==="light"?" ":" text-white")}>
       <div className="text-2xl font-bold cursor-pointer ">
         {"<Amit Sharma/>"}
       </div>

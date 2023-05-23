@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [Theme, SetTheme] = useState<string>("light");
+  const [Theme, SetTheme] = useState<string>("dark");
 
   return (
     <ThemeContext.Provider value={{ Theme, SetTheme }}>

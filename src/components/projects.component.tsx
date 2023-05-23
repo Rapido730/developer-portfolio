@@ -27,7 +27,7 @@ import { ThemeContext } from "@/context/app_state";
 const Projects = () => {
   const { Theme, SetTheme } = useContext(ThemeContext);
   return (
-    <div className="flex flex-col my-12">
+    <div className=" flex flex-col my-12 ">
       <h1
         className={
           "mx-auto text-5xl font-extrabold  mb-16" +
@@ -38,16 +38,16 @@ const Projects = () => {
       </h1>
       <div
         className={
-          "grid grid-cols-3 px-36 gap-24" +
+          "grid  grid-cols-1 sm:grid-cols-3  sm:px-36 gap-24 mx-auto" +
           (Theme === "light" ? "  " : " text-white")
         }
       >
         <div
           className={
-            "w-84 border-4 flex flex-col   rounded-md" +
+            "w-72 sm:w-84  border-4 flex flex-col   rounded-md" +
             (Theme === "light"
-              ? "  shadow-gray-400 shadow-lg"
-              : " shadow-gray-900 shadow-lg")
+              ? "  shadow-gray-400 shadow-md hover:shadow-xl hover:shadow-gray-400 duration-150"
+              : " shadow-gray-900 shadow-md hover:shadow-xl hover:shadow-gray-900 duration-150")
           }
         >
           <div className="h-4/6 border-b-2">
@@ -131,10 +131,10 @@ const Projects = () => {
         </div>
         <div
           className={
-            "w-84 border-4 flex flex-col   rounded-md" +
+            "w-72 sm:w-84 border-4 flex flex-col   rounded-md" +
             (Theme === "light"
-              ? "  shadow-gray-400 shadow-lg"
-              : " shadow-gray-900 shadow-lg")
+              ? "  shadow-gray-400 shadow-md hover:shadow-xl hover:shadow-gray-400 duration-150"
+              : " shadow-gray-900 shadow-md hover:shadow-xl hover:shadow-gray-900 duration-150")
           }
         >
           <div className="h-4/6 border-b-2">
@@ -222,10 +222,10 @@ const Projects = () => {
         </div>
         <div
           className={
-            "w-84 border-4 flex flex-col   rounded-md" +
+            "w-72 sm:w-84 border-4 flex flex-col   rounded-md" +
             (Theme === "light"
-              ? "  shadow-gray-400 shadow-lg"
-              : " shadow-gray-900 shadow-lg")
+              ? "  shadow-gray-400 shadow-md hover:shadow-xl hover:shadow-gray-400 duration-150"
+              : " shadow-gray-900 shadow-md hover:shadow-xl hover:shadow-gray-900 duration-150")
           }
         >
           <div className="h-4/6 border-b-2">

@@ -3,14 +3,14 @@ import { TypeAnimation } from "react-type-animation";
 
 const Typing_Animation = () => {
   return (
-    <div>
+    <div className="mx-auto">
       <TypeAnimation
         sequence={[
           " Amit Sharma", // Types 'One'
           1000, // Waits 1s
           " Full-Stack Developer", // Deletes 'One' and types 'Two'
           1000, // Waits 2s
-          " Technology Enthusiast", // Types 'Three' without deleting 'Two'
+          " Technology Geek", // Types 'Three' without deleting 'Two'
           1000,
           () => {},
         ]}
