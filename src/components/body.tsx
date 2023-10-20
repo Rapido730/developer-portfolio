@@ -82,7 +82,7 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
             />
           </div>
         </Link>
-        <Link href={"https://tinyurl.com/shamitCV"}>
+        <Link href={"https://tinyurl.com/cvshamit"}>
           <div className="bg-gray-200 p-4 rounded-full">
             <Image
               className="ease-in-out duration-300 hover:scale-125"
@@ -212,7 +212,7 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
                   />
                 </div>
               </Link>
-              <Link href={"https://tinyurl.com/shamitCV"}>
+              <Link href={"https://tinyurl.com/cvshamit"}>
                 <div className="bg-gray-200 p-4 rounded-full">
                   <Image
                     className="ease-in-out duration-300 hover:scale-125"
