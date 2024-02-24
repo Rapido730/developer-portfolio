@@ -57,8 +57,8 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
           {"I have experience in developing web applications from the ground up, " +
             "handling all the aspects till deployment. My major work is in MERN " +
             "Stack. I'm Skilled in Problem Solving, Data structure & Algorithms. " +
-            "Actively participate in coding contests like Google Kickstart (achieved " +
-            "5041 rank in Kick start(round E), and LeetCode Weekly(rating 1750+)."}
+            "Actively participate in coding contests " +
+            "and achieved LeetCode Weekly contest rating 1839."}
         </h1>
       </div>
       <div className="flex mx-auto py-12 space-x-12">
@@ -138,7 +138,7 @@ const Body = ({ Work_Ref, Contact_Ref }: props) => {
           >
             Education
           </h1>
-          <div className="flex mx-auto p-4 mb-2 rounded-lg bg-gray-100 space-x-4">
+          <div className="flex max-sm:flex-col mx-auto p-4 mb-2 sm:w-6/12  rounded-lg bg-gray-100 space-x-4">
             <Image src={Degree_Icon} alt="degree" />
             <div>
               <h1 className="text-2xl font-bold">

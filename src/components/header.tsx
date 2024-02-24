@@ -21,29 +21,34 @@ const Header = ({ Work_Ref, Contact_Ref }: props) => {
   };
 
   return (
-    <div className={"flex justify-between border-b-2 p-2" + (Theme==="light"?" ":" text-white")}>
+    <div
+      className={
+        "flex justify-between border-b-2 py-2 px-16 bg-gray-900" +
+        (Theme === "light" ? " " : " text-white")
+      }
+    >
       <div className="text-2xl font-bold cursor-pointer ">
         {"<Amit Sharma/>"}
       </div>
-      <div className="flex space-x-4">
-        <div
-          className="font-bold cursor-pointer "
+      <div className="flex space-x-8 justify-evenly items-center">
+        <h3
+          className="font-bold text-xl cursor-pointer "
           onClick={() => {
             Work_Ref.current.scrollIntoView({ behavior: "smooth" });
           }}
         >
           Works
-        </div>
-        <div
-          className="font-bold cursor-pointer"
+        </h3>
+        <h3
+          className="font-bold text-xl cursor-pointer"
           onClick={() => {
             Contact_Ref.current.scrollIntoView({ behavior: "smooth" });
           }}
         >
           Contact
-        </div>
+        </h3>
         <div
-          className="p-2 mb-2 hover:scale-125 ease-in-out duration-300 bg-gray-200 rounded-full"
+          className="p-2 mb-2 hover:scale-125 cursor-pointer ease-in-out duration-300 bg-gray-200 rounded-full"
           onClick={ThemeChangeHandler}
         >
           {Theme === "light" ? (

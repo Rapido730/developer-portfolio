@@ -22,15 +22,19 @@ export default function Home() {
   return (
     <div
       className={
-        "flex flex-col max-sm:overflow-auto" +
+        "flex flex-col " +
         (Theme === "light"
           ? ""
           : " bg-gradient-to-tl from-gray-800 via-slate-600 to-slate-800 ") +
         poppins.className
       }
     >
-      <Header Work_Ref={Work_Ref} Contact_Ref={Contact_Ref} />
-      <Body Work_Ref={Work_Ref} Contact_Ref={Contact_Ref} />
+      <div className={"fixed w-full "}>
+        <Header Work_Ref={Work_Ref} Contact_Ref={Contact_Ref} />
+      </div>
+      <div className={"max-sm:overflow-auto"}>
+        <Body Work_Ref={Work_Ref} Contact_Ref={Contact_Ref} />
+      </div>
     </div>
   );
 }
